@@ -10,6 +10,7 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         header {
             background-color: #4CAF50;
@@ -19,6 +20,11 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
         }
         footer {
             background-color: #333;
@@ -41,6 +47,22 @@
         .btn:hover {
             background-color: #45a049;
         }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -52,24 +74,31 @@
 <main>
     <section>
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
+        <p>Este é um projeto de exemplo para demonstrar um pull request com melhorias no layout.</p>
     </section>
-
+    
     <section>
-        <h2>Funcionalidades</h2>
-        <ul>
-            <li>Visualização de páginas HTML simples.</li>
-            <li>Interação com formulários.</li>
-            <li>Design simples e responsivo.</li>
-        </ul>
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </section>
-
-    <button class="btn">Clique aqui para aprender mais!</button>
 </main>
 
 <footer>
-    <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Projeto Exemplo</p>
 </footer>
 
 </body>
 </html>
+
+
