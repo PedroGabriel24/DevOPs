@@ -54,6 +54,27 @@
         .btn:hover {
             background-color: #45a049;
         }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
        
     </style>
 </head>
@@ -69,21 +90,18 @@
         <p>Este é um projeto de exemplo para demonstrar um pull request com melhorias no layout.</p>
     </section>
     
-    <section>
+    <section class="form-container">
         <h2>Contato</h2>
-        <form>
+        <form action="#">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-            
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-            
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-            <button type="submit" class="btn">
-              </form>
-          </section>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
 </main>
 
 <footer>
